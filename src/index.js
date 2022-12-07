@@ -1,41 +1,45 @@
 import './style.css';
-// import './style.css';
+let todosArr = [];
+class todo {
+    constructor(description, completed = false, index){
+        this.description = description;
+        this.completed = completed;
+        this.index = index;
+    }
+}
+const pushtodo = () =>{
+   const index = todo.length;
+   const description = document.getElementById('input').value;
+   const completed = false;
+   const todoList = new todo(description,completed,index);
+   if(description != ''){
+    todosArr.push(todoList);
+   }
+}
 
 const Dynamic = document.querySelector('.todo-maker');
-const todos = [
-    {
-        description : "wake up from bed",
-        completed : false,
-        index: 0,
-    },
-    {
-        description : "take break fast",
-        completed : false,
-        index: 1,
-    },
-    {
-        description : "play apex legends",
-        completed : false,
-        index: 2,
-    },
-    {
-        description : "read my books",
-        completed : false,
-        index: 3,
-    }
-]
-
-todos.forEach((deed) => {
-    const content = `
-            <div class="list">
+console.log(todosArr)
+let todos2=() => {
+    Dynamic.innerHTML = '';
+    for (let i = 0; i < todosArr.length; i ++){
+        Dynamic.innerHTML += `
+        <div class="list">
                 <div class="list-action">
                     <input type="checkbox">
-                    <p>${deed.description}</p>
+                    <p>${todosArr[i].description}</p>
                 </div>
                 <div class="action-container">
-                    <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="icon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
                 </div>
             </div>
             <hr>`;
-            Dynamic.innerHTML += content;
-})
+    }
+}
+
+document.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        pushtodo();
+        todos2()
+        console.log(Dynamic)
+    }
+});
