@@ -95,7 +95,7 @@ const edit = document.querySelectorAll('.p');
  edit.forEach((item) => {
     let todosArr = storage();
     item.addEventListener('keyup', (e) => {
-    let des = item.innerHTML;
+    let des = item.textContent
     let iD =  item.id ;
     todosArr[iD].description = des;
     localStorage.setItem('deeds', JSON.stringify(todosArr));
