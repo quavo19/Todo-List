@@ -79,8 +79,6 @@ const rmv = document.querySelectorAll('.remove');
  rmv.forEach((item) => {
   item.addEventListener('click', (e) => {
     let todosArr = storage();
-     const card2 = e.path.filter((el) => el.classList?.contains('list')).at(0);
-     card2.remove()
      todosArr.splice(item.id, 1);
      todosArr.forEach((todo) => {
         todo.index = todosArr.indexOf(todo);
@@ -97,7 +95,6 @@ const edit = document.querySelectorAll('.p');
  edit.forEach((item) => {
     let todosArr = storage();
     item.addEventListener('keyup', (e) => {
-    const card2 = e.path.filter((el) => el.classList?.contains('list')).at(0);
     let des = item.innerHTML;
     let iD =  item.id ;
     todosArr[iD].description = des;
