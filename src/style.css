@@ -80,7 +80,7 @@ main {
   margin: 20px;
 }
 
-.checked p{
+.checked p {
   text-decoration: line-through;
   font-style: italic;
   color: gray;
@@ -90,14 +90,14 @@ main {
   padding-left: 10px;
 }
 
-.remove:hover{
+.remove:hover {
   transform: scale(1.2);
 }
 
-.line{
+.line {
   cursor: move;
 }
 
-.p{
+.p {
   outline: none;
 }
