@@ -93,3 +93,11 @@ main {
 .remove:hover{
   transform: scale(1.2);
 }
+
+.line{
+  cursor: move;
+}
+
+.p{
+  outline: none;
+}

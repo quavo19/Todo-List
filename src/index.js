@@ -4,8 +4,9 @@ import './style.css';
     const todosArr = JSON.parse(localStorage.getItem('deeds')) || [] ;
     return todosArr;
  }
-// console.log(todosArr)
 
+let editid;
+let isedited = false;
 class todo {
     constructor(description, completed = false, index){
         this.description = description;
@@ -36,10 +37,10 @@ let todos2=() => {
         <div class="list ${isComplte}">
                 <div class="list-action">
                     <input class ="check" id ="${todosArr[i].index}" ${isComplte} type="checkbox">
-                    <p>${todosArr[i].description}</p>
+                    <p contenteditable="true"class="p">${todosArr[i].description}</p>
                 </div>
                 <div class="action-container">
-                    <div class="icon"><i id = "vertical" class="fa-solid fa-ellipsis-vertical"></i> <i id = "${todosArr[i].index}" class="fa-solid fa-trash remove"></i></div>
+                    <div class="icon"><i id = "${todosArr[i].index}" class="fa-solid fa-ellipsis-vertical line"></i> <i id = "${todosArr[i].index}" class="fa-solid fa-trash remove"></i></div>
                 </div>
             </div>
             `;
