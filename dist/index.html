@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wbpack Exercise</title>
-
-<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+    <script
+      src="https://kit.fontawesome.com/9d6e6aaa13.js"
+      crossorigin="anonymous"
+    ></script>
+<script defer src="main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <main class="todo-container">
+        <div class="list-container">
+            <div class="heading">
+                <h3>Todays To Do</h3>
+                <div><i class="fa-solid fa-arrows-rotate"></i></div>
+            </div>
+        </div> <hr>
+        <div class="input-field">
+            <input id="input" type="text" placeholder="Add to your list...">
+        </div>
+        <hr>
+        <div class="todo-maker">
+            
+            <hr>
+        </div>
+        <div class="clean">
+            <p>Clear all completed</p>
+        </div>
+    </main>
+    
 </body>
 </html>

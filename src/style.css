@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100%;
   background-color: rgb(239, 235, 229);
   font-family: sans-serif;
 }
@@ -23,13 +23,14 @@ body {
 
 .list {
   display: flex;
+  border-bottom: 2px solid black;
   justify-content: space-between;
-  margin: 20px;
 }
 
 .list-action {
   display: flex;
   justify-content: space-between;
+  margin: 20px;
 }
 
 .list-action p {
@@ -68,4 +69,35 @@ body {
   color: gray;
   background-color: rgb(238, 238, 238);
   cursor: pointer;
+}
+
+main {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.icon {
+  margin: 20px;
+}
+
+.checked p {
+  text-decoration: line-through;
+  font-style: italic;
+  color: gray;
+}
+
+.remove {
+  padding-left: 10px;
+}
+
+.remove:hover {
+  transform: scale(1.2);
+}
+
+.line {
+  cursor: move;
+}
+
+.p {
+  outline: none;
 }
