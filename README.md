@@ -62,7 +62,7 @@
 
 ## 🚀 visual <a name="live-demo"></a>
 - Below is how the project will look if setup well 
-![Screenshot (34)](https://user-images.githubusercontent.com/87555548/206562152-7cf400bd-0994-42b1-b298-3640a046c8b1.png)
+![Screenshot (35)](https://user-images.githubusercontent.com/87555548/206563505-85d804b1-433f-4d23-b810-7510ac4ad677.png)
 
 
 
