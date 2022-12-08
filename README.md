@@ -103,7 +103,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/quavo19/Todo-List/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
