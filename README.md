@@ -60,10 +60,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 visual <a name="live-demo"></a>
+- Below is how the project will look if setup well 
+![Screenshot (34)](https://user-images.githubusercontent.com/87555548/206562152-7cf400bd-0994-42b1-b298-3640a046c8b1.png)
 
 
-- not available yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +78,9 @@ To get a local copy up and running follow these simple example steps.
 - Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your project page and clicking on `Download ZIP`
 
 ## Step 2: 
-- Locate the folder where you cloned your project to and open the `index.html` file in your browser to view your project.
+- Locate the folder where you cloned your project to and open with your IDE
+- run `npm start` to get the project started
+- anytime you modify the content, run `npm run build` to update the >dist folder
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
