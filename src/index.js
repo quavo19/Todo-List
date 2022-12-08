@@ -1,3 +1,4 @@
+import { indexOf } from 'lodash';
 import './style.css';
 
  const storage =()=>{
@@ -34,7 +35,7 @@ let todos2=() => {
         <div class="list ${isComplte}">
                 <div class="list-action">
                     <input class ="check" id ="${todosArr[i].index}" ${isComplte} type="checkbox">
-                    <p contenteditable="true"class="p">${todosArr[i].description}</p>
+                    <p id ="${todosArr[i].index}" contenteditable="true"class="p">${todosArr[i].description}</p>
                 </div>
                 <div class="action-container">
                     <div class="icon"><i id = "${todosArr[i].index}" class="fa-solid fa-ellipsis-vertical line"></i> <i id = "${todosArr[i].index}" class="fa-solid fa-trash remove"></i></div>
@@ -88,4 +89,18 @@ const rmv = document.querySelectorAll('.remove');
      todos2();
      location.reload();
       });
+});
+
+// editing tasks
+
+const edit = document.querySelectorAll('.p');
+ edit.forEach((item) => {
+    let todosArr = storage();
+    item.addEventListener('keyup', (e) => {
+    const card2 = e.path.filter((el) => el.classList?.contains('list')).at(0);
+    let des = item.innerHTML;
+    let iD =  item.id ;
+    todosArr[iD].description = des;
+    localStorage.setItem('deeds', JSON.stringify(todosArr));
+    });
 });
