@@ -5,8 +5,6 @@ import './style.css';
     return todosArr;
  }
 
-let editid;
-let isedited = false;
 class todo {
     constructor(description, completed = false, index){
         this.description = description;
@@ -27,7 +25,6 @@ const pushtodo = () =>{
 }
 
 const Dynamic = document.querySelector('.todo-maker');
-// console.log(todosArr)
 let todos2=() => {
     const todosArr = storage();
     Dynamic.innerHTML = '';
