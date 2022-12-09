@@ -1,10 +1,12 @@
-import { indexOf } from 'lodash';
+import  clean  from './clear-all.js'
 import './style.css';
 
  const storage =()=>{
     const todosArr = JSON.parse(localStorage.getItem('deeds')) || [] ;
     return todosArr;
  }
+
+ export { storage as default} 
 
 class todo {
     constructor(description, completed = false, index){
@@ -52,6 +54,7 @@ const checked = document.querySelectorAll('.check');
 checked.forEach((button) => {
     const todosArr = storage();
     button.addEventListener('click', (e) => {
+        const todosArr = storage();
        const card = e.path.filter((el) => el.classList?.contains('list')).at(0);
        if(button.checked){
         card.classList.add("checked");
@@ -80,6 +83,7 @@ const rmv = document.querySelectorAll('.remove');
   item.addEventListener('click', (e) => {
     let todosArr = storage();
      todosArr.splice(item.id, 1);
+     console.log(item)
      todosArr.forEach((todo) => {
         todo.index = todosArr.indexOf(todo);
      });
@@ -101,3 +105,5 @@ const edit = document.querySelectorAll('.p');
     localStorage.setItem('deeds', JSON.stringify(todosArr));
     });
 });
+
+clean();
