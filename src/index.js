@@ -50,6 +50,7 @@ let todos2=() => {
 
 todos2();
 
+// checkbox updates
 const checked = document.querySelectorAll('.check');
 checked.forEach((button) => {
     const todosArr = storage();
@@ -67,16 +68,19 @@ checked.forEach((button) => {
     });
   });
 
+
+// add function
 document.addEventListener('keyup', (e) => {
     const todosArr = storage();
     if (e.key === 'Enter') {
         localStorage.setItem('deeds', JSON.stringify(todosArr));
          pushtodo();
          todos2();
-         window.location.reload();
+        window.location.reload();
         console.log(Dynamic)
     }
 });
+// remove function
 
 const rmv = document.querySelectorAll('.remove');
  rmv.forEach((item) => {
