@@ -35,9 +35,9 @@
 - [📝 License](#license)
 
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 TODO App <a name="about-project"></a>
 
-> This is a web pack configuration project
+> This web app is used to organize tasks, a user can make a list of todos, mark them as complete and delete them
 
 
 ## 🛠 Built With <a name="built-with"></a>
