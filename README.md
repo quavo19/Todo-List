@@ -64,7 +64,7 @@
 
 > below is a live demo link
 
-- [Live Demo Link]()
+- [Live Demo Link](https://quavo19.github.io/Todo-List/dist/)
 
 ## 🚀 visual <a name="view"></a>
 - Below is how the project will look if setup well 
