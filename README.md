@@ -61,8 +61,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 🚀 visual <a name="live-demo"></a>
-below is a live demo link
+
+> below is a live demo link
+
 - [Live Demo Link]()
+
 ## 🚀 visual <a name="view"></a>
 - Below is how the project will look if setup well 
 ![Screenshot (35)](https://user-images.githubusercontent.com/87555548/206563505-85d804b1-433f-4d23-b810-7510ac4ad677.png)
