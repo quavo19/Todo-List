@@ -56,3 +56,27 @@ describe('delete all ', () => {
     expect(list.list[0].description).toBe('We have to finished testing');
   });
 });
+
+describe('check for status updates', () => {
+  test('Update a status of 1 task', () => {
+    const list = new ListTasks();
+    list.add('simple text');
+    const input = document.getElementById(1).querySelector("[type='checkbox']");
+    input.checked = true;
+    list.onCheck(input);
+
+    expect(list.list[0].completed).toBe(true);
+  });
+});
+
+describe('delete all completed todos', () => {
+  test('should clear all the task form the list task', () => {
+    const list = new ListTasks();
+    list.add('Task 1');
+    list.add('Task 2');
+    list.add('Task 3');
+    list.list[0].completed = true;
+    list.clearAll();
+    expect(list.list).toHaveLength(2);
+  });
+});
