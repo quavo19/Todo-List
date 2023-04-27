@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 import clean from './clear-all.js';
 import './style.css';
 
