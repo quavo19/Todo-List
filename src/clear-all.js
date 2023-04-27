@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 import storage from './index.js';
 
 const clean = () => {
